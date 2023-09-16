@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 어드벤처</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="ui-container">
+        <h1>텍스트 어드벤처 게임</h1>
+
+        <div class="input-group">
+            <label for="actionPoints">행동력:</label>
+            <input type="number" id="actionPoints" placeholder="행동력을 입력하세요." min="1" max="100" required>
+        </div>
+
+        <div class="input-group">
+            <label for="healthPoints">생명력:</label>
+            <input type="number" id="healthPoints" placeholder="생명력을 입력하세요." min="1" max="100" required>
+        </div>
+
+        <button onclick="startGame()">게임 시작</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Screen - 텍스트 어드벤처</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 앞서 작성한 CSS 파일 연결 -->
+    <script src="game_script.js" defer></script> <!-- 이 화면용 JavaScript -->
+</head>
+<body>
+    <div class="player-ui">
+        <h2>플레이어 정보</h2>
+        <p>생명력: <span id="displayHealthPoints"></span></p>
+        <p>행동력: <span id="displayActionPoints"></span></p>
+        <div>공격력: <span id="displayAttackPower"></span></div>
+        <div>마력: <span id="displayMagicPower"></span></div>
+        <div>지능: <span id="displayIntelligence"></span></div>
+        <p>돈: <span id="displayMoney"></span></p>
+        <button id="gameRestart">Game Restart</button>
+    </div>
+
+    </div>
+    <div class="game-ui">
+        <p id="gameText">게임의 텍스트가 여기에 표시됩니다.</p>
+        
+        <button class="choice-btn" id="choice1" onclick="chooseOption(1)">선택지 1</button>
+        <button class="choice-btn" id="choice2" onclick="chooseOption(2)">선택지 2</button>
+        <button class="choice-btn" id="choice3" onclick="chooseOption(3)">선택지 3</button>
+    </div> 
+</html>

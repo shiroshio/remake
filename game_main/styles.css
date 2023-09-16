@@ -1,0 +1,113 @@
+body {
+    background-color: #111; /* 검은색 계열의 배경색 */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 100vh; /* 브라우저 높이 전체 사용 */
+}
+
+@font-face {
+    font-family: 'game_ui_font';  /* 원하는 폰트 이름 지정 */
+    src: url('../game_fonts/game_ui_text.ttf') format('truetype');  /* 폰트 파일 경로 지정 */
+}
+
+
+.ui-container {
+    background-color: #fff; /* UI의 배경색 */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; /* UI의 너비를 웹페이지의 80%로 설정 */
+    max-width: 500px; /* UI의 최대 너비 설정 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.player-ui {
+    position: fixed; 
+    left: 20px;       /* 화면의 왼쪽에서부터의 거리 */
+    top: 20px;        /* 화면의 위에서부터의 거리 */
+    background-color: #d8ffd6; /* 연한 초록색 배경 */
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.player-ui h2 {
+    margin-top: 0;
+}
+
+#gameText {
+    font-family: 'game_ui_font', sans-serif;
+}
+
+.game-ui {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.choice-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d8ffd6;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.choice-btn:hover {
+    background-color: #b4e6b1;
+}
+
+
+@media (max-width: 480px) {
+    .player-ui {
+        width: 150px;       /* UI의 너비 줄임 */
+        left: 10px;         /* 왼쪽 간격 줄임 */
+        top: 10px;          /* 상단 간격 줄임 */
+        padding: 10px;      /* 패딩 감소 */
+    }
+}
+
+#gameRestart {
+    padding: 10px 20px;           /* 버튼 안쪽의 패딩 */
+    background-color: #3498db;    /* 버튼의 배경색 */
+    color: white;                 /* 버튼의 글자색 */
+    border: none;                 /* 버튼의 테두리 제거 */
+    border-radius: 5px;           /* 버튼의 모서리를 둥글게 */
+    font-size: 16px;              /* 글자 크기 */
+    cursor: pointer;              /* 마우스 커서를 손가락 모양으로 */
+    transition: 0.3s;             /* 호버 효과의 전환 시간 설정 */
+}
+
+#gameRestart:hover {
+    background-color: #2980b9;    /* 마우스를 올렸을 때의 배경색 */
+}
+
+#gameRestart:active {
+    transform: scale(0.95);       /* 버튼을 클릭했을 때 약간 축소 */
+}
+

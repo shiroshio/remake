@@ -1,0 +1,35 @@
+body {
+    background-color: #111; /* 검은색 계열의 배경색 */
+    margin: 0;
+    font-family: game_ui_font, sans-serif;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 100vh; /* 브라우저 높이 전체 사용 */
+}
+
+@font-face {
+    font-family: 'game_ui_font';  /* 원하는 폰트 이름 지정 */
+    src: url('game_fonts/game_ui_text.ttf') format('truetype');  /* 폰트 파일 경로 지정 */
+}
+
+
+.ui-container {
+    background-color: #fff; /* UI의 배경색 */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; /* UI의 너비를 웹페이지의 80%로 설정 */
+    max-width: 500px; /* UI의 최대 너비 설정 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
